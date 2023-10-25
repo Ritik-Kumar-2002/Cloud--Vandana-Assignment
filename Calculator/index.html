@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>   
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1> Calculator </h1>
+    <div class="container">
+        <div class="display-output">
+            <div class="previous-output" id="prev-output"></div>
+            <input type="text" id="text-field" class="input-text" />
+        </div>
+
+        <div class="btn-wrrap">
+            <div class="row-wrap">
+                <div class="symbol-btn" onclick='getBtnDetail( `(` )' > ( </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `)` )'> ) </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `%` )'> % </div>
+                <div class="symbol-btn" onclick='RevertBack()'> AC </div>
+            </div>
+           
+            <div class="row-wrap">
+                <div class="number-btn" onclick='getBtnDetail( `7` )'> 7 </div>
+                <div class="number-btn" onclick='getBtnDetail( `8` )'> 8 </div>
+                <div class="number-btn" onclick='getBtnDetail( `9` )'> 9 </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `/` )'> ÷ </div>
+            </div>
+           
+            <div class="row-wrap">
+                <div class="number-btn" onclick='getBtnDetail( `4` )'> 4 </div>
+                <div class="number-btn" onclick='getBtnDetail( `5` )'> 5 </div>
+                <div class="number-btn" onclick='getBtnDetail( `6` )'> 6 </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `*` )'> x </div>
+            </div>
+            
+            <div class="row-wrap">
+                <div class="number-btn" onclick='getBtnDetail( `1` )'> 1 </div>
+                <div class="number-btn" onclick='getBtnDetail( `2` )'> 2 </div>
+                <div class="number-btn" onclick='getBtnDetail( `3` )'> 3 </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `-` )'> - </div>
+            </div>
+          
+            <div class="row-wrap">
+                <div class="number-btn" onclick='getBtnDetail( `0` )'> 0 </div>
+                <div class="number-btn" onclick='getBtnDetail( `.` )'> . </div>
+                <div class="symbol-btn" onclick="Evaluate()"> = </div>
+                <div class="symbol-btn" onclick='getBtnDetail( `+` )'> + </div>
+            </div>
+          
+
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

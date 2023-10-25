@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 44%, rgba(154,0,255,1) 100%);
+flex-direction: column;
+}
+h1{
+    color: whitesmoke;
+    font-size: 2.75rem;
+}
+.container{
+    width: 420px;
+    min-height: 380px;
+    background-color: rgb(236, 232, 220);
+    border: none;
+    box-shadow: 10p 5px 5px rgb(180, 180, 180);
+    border-radius: 1rem;
+    overflow:hidden;
+    border: none;
+
+}
+.display-output{
+    height: 90px;
+    /* overflow: hidden; */
+    
+}
+.previous-output{
+    width: 100%;
+    height: 40px;
+    display: table-grow;
+    background-color: rgb(232, 241, 255);
+    color: black;
+    padding: 1rem 1rem ;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.input-text{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(232, 241, 255);
+    border: 0px solid rgb(232, 241, 255);
+    text-align: right;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.number-btn{
+    width: 90px;
+    height: 45px;
+    background-color: rgb(213, 188, 230);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.symbol-btn{
+    width: 90px;
+    height: 45px;
+    background-color: rgb(196, 127, 241);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.row-wrap{
+    width: 100%;
+    display: flex;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}

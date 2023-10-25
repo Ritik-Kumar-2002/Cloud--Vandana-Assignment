@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 44%, rgba(154,0,255,1) 100%);
+    flex-direction: column;
+    color: white;
+}
+.form-wrap{
+    width: 350px;
+    border: 2px solid white;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form-wrap div{
+    margin-top: 0.5rem;
+}
+textarea{
+    width: 100%;
+    min-height: 5rem;
+}

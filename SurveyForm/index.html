@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1> Customer Survey Form </h1>
+    </div>
+    <div class="form-wrap">
+        <div>
+            <label>Name</label> <input type="text" id='name' placeholder="Name" />
+        </div>
+        <div>
+            <label>Email</label> <input type="email" id='email' placeholder="Email" />
+        </div>
+        <div>
+            <p>Is this first time You are using our products and services? </p>
+            <input type="radio" /> <label>Yes</label>
+            <input type="radio" /> <label>No</label>
+        </div>
+
+        <div>
+            <p>Would you suggestion to your friends and colleagus? </p>
+            <input type="radio" /> <label>Yes</label>
+            <input type="radio" /> <label>No</label>
+        </div>
+
+        <div>
+            <p>How satisfied are you with your company overall </p>
+            <input type="radio" /> <label>Satisfied</label>
+            <input type="radio" /> <label>Undecided</label>
+            <input type="radio" /> <label>UnSatisfied</label>
+        </div>
+
+        <div>
+            <p>Do you have suggestion to improve our services? </p>
+            <textarea id="subject"></textarea>
+        </div>
+
+
+        <button>Submit</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
