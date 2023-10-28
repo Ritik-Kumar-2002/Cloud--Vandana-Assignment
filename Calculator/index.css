@@ -1,71 +1,66 @@
 body{
     box-sizing: border-box;
     padding: 0px;
-    margin: 0px;
+    margin: 0px;  
+    height: 100vh;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 44%, rgba(154,0,255,1) 100%);
+}
+.body{
+    width: 420px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 44%, rgba(154,0,255,1) 100%);
-flex-direction: column;
+    box-sizing: border-box;
 }
 h1{
     color: whitesmoke;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 .container{
     width: 420px;
-    min-height: 380px;
-    background-color: rgb(236, 232, 220);
-    border: none;
-    box-shadow: 10p 5px 5px rgb(180, 180, 180);
-    border-radius: 1rem;
-    overflow:hidden;
-    border: none;
-
+    padding: 1rem;
+}
+.row-wrap{
+    margin-bottom: 0.5rem;
 }
 .display-output{
-    height: 90px;
-    /* overflow: hidden; */
-    
-}
-.previous-output{
+    height: 100px; 
     width: 100%;
-    height: 40px;
-    display: table-grow;
-    background-color: rgb(232, 241, 255);
-    color: black;
-    padding: 1rem 1rem ;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    box-sizing: border-box;
+    background-color: rgb(227, 231, 241);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
 }
-.input-text{
-    width: 100%;
-    height: 50px;
-    background-color: rgb(232, 241, 255);
-    border: 0px solid rgb(232, 241, 255);
-    text-align: right;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    color: black;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .btn-wrap{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 
+.input-text{
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 95%;
+    background-color: rgb(227, 231, 241);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+.previous-output{
+    font-size: 1.5rem;
+    text-align: right;
+    height: 50px;
+    width: 95%;
+    /* border: 2px solid orchid; */
+}
 .number-btn{
-    width: 90px;
-    height: 45px;
+    width: 5.5rem;
+    height: 3rem;
     background-color: rgb(213, 188, 230);
     border-radius: 0.5rem;
     font-size: 1.5rem;
@@ -78,9 +73,15 @@ h1{
     cursor: pointer;
 }
 
+.btn-wrap{
+    
+    background-color: rgb(227, 231, 241);
+    border-radius: 0.5rem;
+}
+
 .symbol-btn{
-    width: 90px;
-    height: 45px;
+    width: 5.5rem;
+    height: 3rem;
     background-color: rgb(196, 127, 241);
     border-radius: 0.5rem;
     font-size: 1.5rem;

@@ -7,25 +7,29 @@ var input = "";
 const getBtnDetail = (arg) =>{
     console.log(`arg is ${arg}`);
    
-    
-    // console.log("len  is ", previousOutput.length);
     if(previousOutput.innerHTML.length > 0) {
         previousOutput.innerHTML = "";
         input="";
         inputText.value = input;
-        // console.log("running ");
     }
     input = input + arg;
     console.log(`input is ${input}`)
     inputText.value = input;
 }
 
+
 const Evaluate = () =>{
-    let output = eval(input);
-    console.log(output);
-    previousOutput.innerHTML = input;
-    inputText.value = output;
-    console.log("len is ", previousOutput.innerHTML.length);
+    try{
+        let output = eval(input);
+        console.log(output);
+        previousOutput.innerHTML = input;
+        inputText.value = output;
+        console.log("len is ", previousOutput.innerHTML.length);
+    }catch(error){
+        inputText.value = "ERROR";
+    }
+    
+    
 
 }
 
